@@ -1,33 +1,39 @@
-import java.util.Scanner;
+// Lukas Albin
 
-public class WeatherReport 
+// Weather Report program
+
+// 8/21/17
+
+import java.util.Scanner; // imports scanner
+
+public class WeatherReport
 {
 
-	public static void main(String[] args)
+	public static void main(String[] args) 
 	{
-		Scanner cin = new Scanner(System.in);
+		Scanner cin = new Scanner(System.in); // Scanner becomes System in
 		
-		System.out.println("Hello! Please enter your temperature in Farenheit!");
+		System.out.println("Hello! Please enter your temperature in Farenheit!"); 
 		
-		int temp = cin.nextInt();
+		int temperature = cin.nextInt(); // introduces variable "temperature"
 		
-		int ans = temp;
+		int ans = temperature; // introduces variable "ans" that = "temperature"
 		
 		{
-			ans = (((temp - 32)*5)/9);
+			ans = (((temperature - 32)*5)/9);   
 		}
 		
-		System.out.println("You're temperature is" +" " + ans +" " + "centigrade");
+		System.out.println("You're temperature is" +" " + ans +" " + "centigrade."); 
 		
-		if(temp<=32)
+		if(temperature<=32) 
 		{
-			System.out.println("It's cold outside!");
+			System.out.println("It's cold outside!"); 
 		}
-		else if(temp>=90)
+		else if(temperature>=90) 
 		{
-			System.out.println("It's hot outside!");
+			System.out.println("It's hot outside!"); 
 		}
-		cin.close();
+		cin.close(); // close the cin
 			
 	}
 
